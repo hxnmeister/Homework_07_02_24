@@ -64,20 +64,6 @@ public class Human {
         this.gender = gender;
     }
 
-    private Date getInputDate(final String inputMessage) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Scanner scanner = new Scanner(System.in);
-
-        while(true){
-            try{
-                System.out.print(inputMessage);
-                return dateFormat.parse(scanner.nextLine());
-            }
-            catch (Exception ex){
-                System.out.println(" Incorrect date format!");
-            }
-        }
-    }
 
     private Gender selectGender() {
         int choice;
@@ -126,7 +112,7 @@ public class Human {
         }while (!tempString.equals("0") && tempString.length() < 2);
         this.patronymic = tempString.equals("0") ? "" : tempString;
 
-        this.birthDate = getInputDate("\n Enter birthday (yyyy-MM-dd): ");
+        this.birthDate = InputHelpers.getInputDate("\n Enter birthday (yyyy-MM-dd): ");
 
         this.gender = selectGender();
     }

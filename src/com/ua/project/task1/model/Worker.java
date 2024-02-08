@@ -22,7 +22,7 @@ public class Worker extends Human {
     }
     public Worker(){
         this(new HumanDto("First Name", "Last Name", new Date()),
-                new WorkerDto(0, "", BigDecimal.ZERO));
+                new WorkerDto(1, "", BigDecimal.ZERO));
     }
 
     public int getExperience() {

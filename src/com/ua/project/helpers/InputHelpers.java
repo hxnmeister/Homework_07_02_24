@@ -1,5 +1,7 @@
 package com.ua.project.helpers;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -24,12 +26,11 @@ public class InputHelpers {
 
     public static int getPositiveIntegerInput(final String inputMessage) {
         int integerInput;
-        Scanner scanner = new Scanner(System.in);
 
         while(true){
             try{
                 System.out.print(inputMessage);
-                integerInput = scanner.nextInt();
+                integerInput = SCANNER.nextInt();
 
                 if(integerInput <= 0){
                     throw new IllegalArgumentException(" Number cannot be less than zero or equals to it!");
@@ -39,10 +40,24 @@ public class InputHelpers {
             }
             catch(InputMismatchException inputEx) {
                 System.out.println(" Incorrect input, please enter a number!");
-                scanner.next();
+                SCANNER.next();
             }
             catch(Exception ex){
                 System.out.println(ex.getMessage());
+            }
+        }
+    }
+
+    public static Date getInputDate(final String inputMessage) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        while(true){
+            try{
+                System.out.print(inputMessage);
+                return dateFormat.parse(SCANNER.nextLine());
+            }
+            catch (Exception ex){
+                System.out.println(" Incorrect date format!");
             }
         }
     }
