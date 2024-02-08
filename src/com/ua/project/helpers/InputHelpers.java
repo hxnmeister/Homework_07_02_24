@@ -1,4 +1,4 @@
-package com.ua.project.task1.util.helpers;
+package com.ua.project.helpers;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

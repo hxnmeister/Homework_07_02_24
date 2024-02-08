@@ -2,9 +2,8 @@ package com.ua.project.task1.model;
 
 import com.ua.project.task1.dto.HumanDto;
 import com.ua.project.task1.enums.Gender;
-import com.ua.project.task1.util.helpers.InputHelpers;
+import com.ua.project.helpers.InputHelpers;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.InputMismatchException;

@@ -1,7 +1,6 @@
 package com.ua.project.task1;
 
-import com.ua.project.task1.model.Human;
-import com.ua.project.task1.util.helpers.InputHelpers;
+import com.ua.project.helpers.InputHelpers;
 
 public class Main {
     public static void main(String[] args) {
