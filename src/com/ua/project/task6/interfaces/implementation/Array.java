@@ -1,10 +1,11 @@
 package com.ua.project.task6.interfaces.implementation;
 
 import com.ua.project.task6.interfaces.IMath;
+import com.ua.project.task6.interfaces.ISort;
 
 import java.util.Arrays;
 
-public class Array implements IMath {
+public class Array implements IMath, ISort {
     private int[] array;
 
     public Array(int size) {
@@ -91,5 +92,32 @@ public class Array implements IMath {
         }
 
         return (float) avg / this.array.length;
+    }
+
+    @Override
+    public void sortAsc(){
+        Arrays.sort(this.array);
+    }
+
+    @Override
+    public void sortDesc(){
+        for (int i = 0; i < this.array.length; i++) {
+            for (int j = i + 1; j < this.array.length; j++) {
+                if(this.array[i] < this.array[j]){
+                    int temp = this.array[i];
+                    this.array[i] = this.array[j];
+                    this.array[j] = temp;
+                }
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder temp = new StringBuilder(" Array: ");
+        for (int j : this.array) {
+            temp.append(j).append(" ");
+        }
+        return temp.toString();
     }
 }

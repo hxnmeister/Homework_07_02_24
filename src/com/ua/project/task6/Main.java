@@ -21,5 +21,11 @@ public class Main {
         System.out.printf(" Max: %s%n", array.max());
         System.out.printf(" Min: %s%n", array.min());
         System.out.printf(" Avg: %s%n", array.avg());
+
+        array.sortAsc();
+        System.out.println(array);
+
+        array.sortDesc();
+        System.out.println(array);
     }
 }
