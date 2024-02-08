@@ -1,6 +1,6 @@
 package com.ua.project.task4;
 
-import com.ua.project.task4.model.Device;
+import com.ua.project.task4.abstraction.Device;
 
 public class Steamboat extends Device {
     public Steamboat(String description, String sound, String name) {

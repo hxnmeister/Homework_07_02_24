@@ -1,6 +1,6 @@
 package com.ua.project.task4;
 
-import com.ua.project.task4.model.Device;
+import com.ua.project.task4.abstraction.Device;
 
 public class Kettle extends Device {
     public Kettle(String description, String sound, String name) {

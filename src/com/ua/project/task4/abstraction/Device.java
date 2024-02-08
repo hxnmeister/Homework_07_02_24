@@ -1,4 +1,4 @@
-package com.ua.project.task4.model;
+package com.ua.project.task4.abstraction;
 
 public abstract class Device {
     private String description;
