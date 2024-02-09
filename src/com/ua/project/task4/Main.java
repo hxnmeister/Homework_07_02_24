@@ -1,5 +1,10 @@
 package com.ua.project.task4;
 
+import com.ua.project.task4.model.Car;
+import com.ua.project.task4.model.Kettle;
+import com.ua.project.task4.model.Microwave;
+import com.ua.project.task4.model.Steamboat;
+
 public class Main {
     public static void main(String[] args) {
         Car car = new Car("Good drifting car!", "Beep-beep", "Toyota");

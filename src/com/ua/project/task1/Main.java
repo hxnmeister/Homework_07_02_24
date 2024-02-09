@@ -1,6 +1,8 @@
 package com.ua.project.task1;
 
-import com.ua.project.helpers.InputHelpers;
+import com.ua.project.task1.model.Builder;
+import com.ua.project.task1.model.Pilot;
+import com.ua.project.task1.model.Sailor;
 
 public class Main {
     public static void main(String[] args) {

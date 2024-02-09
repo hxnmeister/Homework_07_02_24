@@ -1,6 +1,6 @@
-package com.ua.project.task4;
+package com.ua.project.task4.model;
 
-import com.ua.project.task4.abstraction.Device;
+import com.ua.project.task4.model.Device;
 
 public class Car extends Device {
     public Car(String description, String sound, String name) {

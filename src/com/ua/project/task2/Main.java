@@ -1,6 +1,9 @@
 package com.ua.project.task2;
 
 import com.ua.project.task2.dto.AnimalDto;
+import com.ua.project.task2.model.Crocodile;
+import com.ua.project.task2.model.Kangaroo;
+import com.ua.project.task2.model.Tiger;
 
 public class Main {
     public static void main(String[] args) {

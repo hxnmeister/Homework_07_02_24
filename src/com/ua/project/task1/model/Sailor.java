@@ -1,4 +1,4 @@
-package com.ua.project.task1;
+package com.ua.project.task1.model;
 
 import com.ua.project.task1.dto.HumanDto;
 import com.ua.project.task1.dto.WorkerDto;

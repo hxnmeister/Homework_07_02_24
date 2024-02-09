@@ -1,4 +1,4 @@
-package com.ua.project.task2;
+package com.ua.project.task2.model;
 
 import com.ua.project.task2.dto.AnimalDto;
 import com.ua.project.task2.model.Animal;
